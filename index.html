@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulshan</title>
+
+
+    <!-- css component -->
+    <link rel="stylesheet" href="style.css">
+ 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<script>
+    const navLinks = document.querySelectorAll('.nav-item')
+const menuToggle = document.getElementById('navbarSupportedContent')
+const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
+navLinks.forEach((l) => {
+    l.addEventListener('click', () => { bsCollapse.toggle() })
+})
+</script>
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy5qDHtBeDZx56N6ZNIc6EBYIJKxMxygIlo"
+    crossorigin="anonymous">
+</head>
+
+
+<body class="body">
+    <!--=============== navbar component============-->
+    
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light text-uppercase">
+            <div class="container-fluid">
+                <a class="navbar-brand " href="#">Port-<span class="fw-bold fs-5 text-warning ">Folio</span></a>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item">
+                            <a  class="nav-link active px-4 rounded" aria-current="page" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a  class="nav-link active  px-4 rounded" aria-current="page" href="#About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a  class="nav-link active  px-4 rounded" aria-current="page" href="#Service">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a  class="nav-link active  px-4 rounded" aria-current="page" href="#Contact">Contact</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+  
+
+
+    <!-- =====================Carousal item ==============================-->
+
+    <div id="Home" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="active"
+                aria-current="true" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active " data-bs-interval="1000">
+                <img src="img2.jpg" class="d-block w-100 aaaaaaaa img-fluid" alt="...">
+                <div class="carousel-caption  d-md-block py-5">
+                    <h4 class="text-white fw-4 fs-3 ">Hello !! <span> I'm </span></h4>
+                    <p class="text-black fw-bold fs-1 ">Gulshan <span class="text-warning fs-1">Kumar</span></p><br />
+                    <!-- <h1> Web-<span class="text-center text-primary">Developer</span></h1> -->
+                </div>
+            </div>
+            <div class="carousel-item " data-bs-interval="2000">
+                <img src="img1.jpg" class="d-block w-100 aaaaaaaa img-fluid " alt="...">
+                <div class="carousel-caption  d-md-block py-5">
+                    <h5 class=" fw-bold fs-3">Web-<span>Developer </span></h5>
+                    <button type="button" onclick="location.href='https://shorturl.at/ehlwA' "
+                        class="btn btn-warning mb-5 mx-5 rounded"> Download Resume</button>
+                </div>
+            </div>
+        </div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button> -->
+    </div>
+
+
+    <!--================= About Section================== -->
+    <!-- <div class="container-fluid py-3 " id="About">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white "  style="-webkit-text-stroke: 1px #dee2e6;">About
+                </h1>
+                <h1 class="position-absolute text-uppercase text-primary display-2">About</h1>
+
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container-fluid py-1" id="About">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <!-- <h1 class="display-1 text-uppercase text-white " style="-webkit-text-stroke: 1px #dee2e6;">
+                    About</h1> -->
+                <h1 class="text-uppercase text-primary">About</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid my-3 aboutsection">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-12 bg-none img-fluid p-2">
+                <img src="img6.png" data-aos="fade-right" data-aos-duration="1000"
+                    class="img-fluid rounded-circle my-2 " alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="container py-5 animation " style="color: white;">
+                    <!-- <h5 class="text-info fw-4 fs-3 ">WebDeveloper & Software Eng</h5> -->
+                    <h5 class="text-info fw-4 fs-3 ">Software Development Engineer 1 </h5>
+                    <!-- <h5 class="fs-3 fw-4 ">Role:<span>Web Developer & Software Enginner</span></h5> -->
+                    <p class="py-1">My name is <span class="fw-bold fs-3 text-danger" style="text-decoration: underline;">Gulshan Kumar </span> and I am writing to
+                        express my interest in the Software Developer role.I believe
+                        that my skills, experience, and passion for software development make me an excellent fit
+                        for
+                        the role.I have 1years of experience in software development, working with a variety of
+                        programming languages, such as [C, C++ , js ,Python ,Aws Solution Archtect Html ,Css ,Bootstraps
+                        React js , tailwind css, Material Ui, Node Js, Git and Github ..etc]</p>
+                </div>
+                <div class="container mb-3">
+                    <!-- <download resuem></download> -->
+                    <button type="button" onclick="location.href='https://shorturl.at/ehlwA' "
+                        class="btn btn-warning mb-5 mx-5 rounded"> Download Resume</button>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Skill
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse mb" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body ">
+                                    <ul>
+                                        <li>
+                                            <p class="class">Aws Solution architect</p>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated "
+                                                    role="progressbar" style="width: 75%;" aria-valuenow=""
+                                                    aria-valuemin="0" aria-valuemax="100">75%</div>
+                                        </li>
+                                        <li>
+                                            <p class="class">C</p>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                    role="progressbar" style="width: 65%;" aria-valuenow=""
+                                                    aria-valuemin="0" aria-valuemax="100">65%</div>
+                                        </li>
+                                        <li>
+                                            <p class="class">C++</p>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                    role="progressbar" style="width: 65%;" aria-valuenow=""
+                                                    aria-valuemin="0" aria-valuemax="100">65%</div>
+                                        </li>
+                                        <li>
+                                            <p class="class">Python</p>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                    role="progressbar" style="width: 75%;" aria-valuenow=""
+                                                    aria-valuemin="0" aria-valuemax="100">75%</div>
+                                        </li>
+                                        <li>
+                                            <p class="class">Html and Css</p>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                    role="progressbar" style="width: 85%;" aria-valuenow=""
+                                                    aria-valuemin="0" aria-valuemax="100">85%</div>
+                                        </li>
+                                        <li>
+                                            <p class="class">JavaScript</p>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                    role="progressbar" style="width: 50%;" aria-valuenow=""
+                                                    aria-valuemin="0" aria-valuemax="100">50%</div>
+                                        </li>
+                                        <li>
+                                            <p class="class">Bootstrap</p>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                    role="progressbar" style="width: 65%;" aria-valuenow=""
+                                                    aria-valuemin="0" aria-valuemax="100">75%</div>
+                                        </li>
+
+                                        <li>
+                                            <p class="class">React Js With Tailwind Css</p>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                    role="progressbar" style="width: 75%;" aria-valuenow=""
+                                                    aria-valuemin="0" aria-valuemax="100">75%</div>
+                                        </li>
+                                        <li>
+                                            <p class="class">Node js</p>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                    role="progressbar" style="width: 65%;" aria-valuenow=""
+                                                    aria-valuemin="0" aria-valuemax="100">65%</div>
+                                        </li>
+
+                                        <li>
+                                            <p class="class">Sql</p>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                    role="progressbar" style="width: 65%;" aria-valuenow=""
+                                                    aria-valuemin="0" aria-valuemax="100">65%</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    project
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ol>
+                                        <li>1.Expense Management</li>
+                                        <li>2.Vertical Lift Bridge Simulation</li>
+                                        <li>3.My Portfolio</li>
+                                        <li>4.Ecommerce website(Online food Website)
+                                        </li>
+                                        <li>5.Shopify Website</li>
+                                        <li>6.Image-Search-engine-website</li>
+
+                                    </ol>
+
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Languages
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>
+                                            <p class="class">Hindi(Native or Bilingual
+                                                Proficiency)</p>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                    role="progressbar" style="width: 100%;" aria-valuenow="0"
+                                                    aria-valuemin="0" aria-valuemax="100">100%</div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p class="class">English(Full Professional Proficiency)</p>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                    role="progressbar" style="width:50%;" aria-valuenow="0"
+                                                    aria-valuemin="0" aria-valuemax="100">80%</div>
+                                            </div>
+                                        </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed mb-3" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Hobby
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    My hobby includes playing cricket, coding, and listening to music. I enjoy
+                                    spending
+                                    my free time on the cricket field, sharpening my skills with each game. In
+                                    addition,
+                                    I have a great passion for coding and love exploring new technologies to enhance
+                                    my
+                                    knowledge. Lastly, I find listening to music to be a great stress-reliever and
+                                    love
+                                    discovering new artists and genres. Overall, these hobbies bring me joy and
+                                    fulfillment in my daily life.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingQualifications">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseQualifications" aria-expanded="false"
+                                    aria-controls="collapseQualifications">
+                                    Qualifications
+                                </button>
+                            </h2>
+                            <div id="collapseQualifications" class="accordion-collapse collapse"
+                                aria-labelledby="headingQualifications" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <!-- Add Bootstrap Nav with Tabs for Qualifications -->
+                                    <ul class="nav nav-tabs" id="qualificationsTabs" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link active" id="graduation-tab" data-bs-toggle="tab" href="#graduation"
+                                                role="tab" aria-controls="graduation" aria-selected="true">Graduation</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="twelfth-tab" data-bs-toggle="tab" href="#twelfth" role="tab"
+                                                aria-controls="twelfth" aria-selected="false">12th</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="tenth-tab" data-bs-toggle="tab" href="#tenth" role="tab"
+                                                aria-controls="tenth" aria-selected="false">10th</a>
+                                        </li>
+                                    </ul>
+            
+                                    <!-- Add Tab Content for Qualifications -->
+                                    <div class="tab-content mt-3" id="qualificationsTabsContent">
+                                        <!-- Graduation Tab Content -->
+                                        <div class="tab-pane fade show active" id="graduation" role="tabpanel" aria-labelledby="graduation-tab">
+                                            <h4>Graduation</h4>
+                                            <p>B.E (Computer Science Engineering)</p>
+                                            <p>Sambhram Institute of Technology, Bengaluru</p>
+                                            <p>Enrolled in 2019 - 2023(Completed)</p>
+                                            <p>Overall CGPA: 8.01</p>
+                                
+                                        </div>
+                                    
+                                        <!-- 12th Tab Content -->
+                                        <div class="tab-pane fade" id="twelfth" role="tabpanel" aria-labelledby="twelfth-tab">
+                                            <h4>12th</h4>
+                                            <p>S.n.n.r College Chamtha Begusarai (BSEB)</p>
+                                            <p>Year of Completion: 2019</p>
+                                            <p>Percentage: 74.8%</p>
+                                           
+                                        </div>
+                                    
+                                        <!-- 10th Tab Content -->
+                                        <div class="tab-pane fade" id="tenth" role="tabpanel" aria-labelledby="tenth-tab">
+                                            <h4>10th</h4>
+                                            <p>St. Jude's Vidyalaya Barauni, Begusarai</p>
+                                            <p>Year of Completion: 2016</p>
+                                            <p>CGPA: 8.8</p>
+                                          
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ======================== Project section -->
+
+    <div class="container-fluid py-3" id="Service">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="text-uppercase text-primary">Project</h1>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Project Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="backend.jpg" class="card-img-top" alt="Project 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1 Title</h5>
+                        <p class="card-text">Description of Project 1 goes here.</p>
+                        <a href="project1_live_link" class="btn btn-primary" target="_blank">Live Demo</a>
+                        <a href="project1_github_link" class="btn btn-secondary" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div><div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="backend.jpg" class="card-img-top" alt="Project 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1 Title</h5>
+                        <p class="card-text">Description of Project 1 goes here.</p>
+                        <a href="project1_live_link" class="btn btn-primary" target="_blank">Live Demo</a>
+                        <a href="project1_github_link" class="btn btn-secondary" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div><div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="backend.jpg" class="card-img-top" alt="Project 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1 Title</h5>
+                        <p class="card-text">Description of Project 1 goes here.</p>
+                        <a href="project1_live_link" class="btn btn-primary" target="_blank">Live Demo</a>
+                        <a href="project1_github_link" class="btn btn-secondary" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div><div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="backend.jpg" class="card-img-top" alt="Project 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1 Title</h5>
+                        <p class="card-text">Description of Project 1 goes here.</p>
+                        <a href="project1_live_link" class="btn btn-primary" target="_blank">Live Demo</a>
+                        <a href="project1_github_link" class="btn btn-secondary" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div><div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="backend.jpg" class="card-img-top" alt="Project 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1 Title</h5>
+                        <p class="card-text">Description of Project 1 goes here.</p>
+                        <a href="project1_live_link" class="btn btn-primary" target="_blank">Live Demo</a>
+                        <a href="project1_github_link" class="btn btn-secondary" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div><div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="backend.jpg" class="card-img-top" alt="Project 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1 Title</h5>
+                        <p class="card-text">Description of Project 1 goes here.</p>
+                        <a href="project1_live_link" class="btn btn-primary" target="_blank">Live Demo</a>
+                        <a href="project1_github_link" class="btn btn-secondary" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+   
+
+    <!-- add project six card  -->
+    <!-- ================ServiceSection============================ -->
+
+    <div class="container-fluid py-1" id="Service">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <!-- <h1 class="display-1 text-uppercase text-white " style="-webkit-text-stroke: 1px #dee2e6;">
+                    Service</h1> -->
+                <h1 class="text-uppercase text-primary">Service</h1>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="AWS.jpg" class="card-img-top img-fluid fixed-size-img" alt="AWS Solution Architect">
+                    <div class="overlay">
+                        <a href="https://aws.amazon.com/certification/certified-solutions-architect-professional/" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">AWS Solution Architect</h5>
+                        <p class="card-text">An AWS Solution Architect is a skilled technical professional who has expertise in designing, deploying, and managing cloud-based solutions on the AWS platform.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="python1.jpg" class="card-img-top img-fluid fixed-size-img" alt="Python Developer">
+                    <div class="overlay">
+                        <a href="https://medium.com/javarevisited/the-2022-python-programmer-roadmap-bafb365071a3" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Python Developer</h5>
+                        <p class="card-text">A Python developer is a software engineer who specializes in using the Python programming language to build software applications, scripts, and tools.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="sql.png" class="card-img-top img-fluid fixed-size-img " alt="SQL Developer">
+                    <div class="overlay">
+                        <a href="https://www.databasestar.com/sql-roadmap/" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">SQL Developer</h5>
+                        <p class="card-text">SQL Developer is a powerful Integrated Development Environment (IDE) designed for working with relational databases, primarily Oracle Database.</p>
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="html.png" class="card-img-top img-fluid fixed-size-img" alt="Frontend Developer">
+                    <div class="overlay">
+                        <a href="https://roadmap.sh/frontend" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Frontend Developer</h5>
+                        <p class="card-text">A frontend developer is a technical professional who specializes in building the user interface (UI) of web applications.</p>
+                      
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="webDeveloper.jpg" class="card-img-top img-fluid fixed-size-img " alt="Web Developer">
+                    <div class="overlay">
+                        <a href="https://levelup.gitconnected.com/the-2020-web-developer-roadmap-76503ddfb327" class="btn btn-primary">Read More</a>
+
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Web Developer</h5>
+                        <p class="card-text">A web developer is a technical professional who is responsible for building and maintaining websites and web applications.</p>
+                       
+                    </div>
+                </div>
+            </div>
+    
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="backend.jpg" class="card-img-top img-fluid fixed-size-img" alt="Backend Developer">
+                    <div class="overlay">
+                        <a href="https://roadmap.sh/backend" class="btn btn-primary">Read More</a>
+
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Backend Developer</h5>
+                        <p class="card-text">A backend developer is a software engineer who specializes in creating and maintaining the server-side components of web applications.</p>
+                      
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+
+    <!--  ===============================<contact us> ========================= -->
+    <div class="container-fluid" id="Contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <!-- <h1 class="display-1 text-uppercase text-white " style="-webkit-text-stroke: 1px #dee2e6;">contact
+                </h1> -->
+                <h1 class=" text-uppercase text-primary">Contact</h1>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container ">
+        <div class="row">
+            <div class="col align-self-center img-fluid contactus ">
+                <form method="POST" action="contact.php">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label text-warning fs-1 fw-bold">Full
+                            Name</label>
+                        <input type="text" name="name" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text" style="color: white;"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label text-warning fs-1 fw-bold">Email
+                            Address</label>
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text" style="color: white;">We'll never share your email
+                            with
+                            anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label text-warning fs-1 fw-bold">Contact
+                            Number</label>
+                        <input type="number" name="phone" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+                    </div>
+
+                    <!-- <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" style="color: white;" for="exampleCheck1">Check me
+                                out</label>
+                        </div> -->
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label text-warning fw-bold fs-1">Your
+                            Message</label>
+                        <textarea class="form-control" name="message" id="exampleFormControlTextarea1"
+                            rows="3"></textarea>
+                    </div>
+                    <div class="col-12 text-center m-auto">
+                        <button type="submit" name="submit"
+                            class="btn btn-primary rounded py-3 mx-5 mb-3 m-auto">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ============================footer section ==================== -->
+
+    <div class="container-fluid  text-white mt-5 py-1 px-sm-1 px-md-5" style="background-color: rgb(35, 36, 33);">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a href="https://www.linkedin.com/in/gulshan-kumar-64244220a/" class="btn btn-light btn-social mx-2"> <i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:gulshankiul1810@gmail.com" class="btn btn-light btn-social mx-2"> <i
+                        class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+917903074152" class="btn btn-light btn-social mx-2"> <i class="fa-solid fa-phone"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100040912207847" class="btn btn-light btn-social mx-2">
+                    <i class="fab fa-facebook "></i></a>
+                <a href="https://www.instagram.com/gulshankumar00023/" class="btn btn-light btn-social mx-2"> <i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p class="m-0"></p>&copy;2024
+            <a href="#" class="text-white fw-bold">Gulshan</a>.All Rights Reseverd.Designed By <a href="#" class="fw-bold"
+                style="color: rgb(240, 148, 148);">Gulshan</a>
+        </div>
+    </div>
+
+    <!-- Aos Component -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-5pP1xjJvO3f6YPkB6BZpO3zPkjDfGIvmjw9p7zfrTqU6Uq4iAAU8hjKK5eg+L3m"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy5qDHtBeDZx56N6ZNIc6EBYIJKxMxygIlo"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

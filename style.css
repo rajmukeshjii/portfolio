@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;0,700;0,800;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    /* overflow-x: hidden; */
+    /* overflow: hidden; */
+    /* overflow: auto; */
+
+    /* IE and Edge */
+    /* -ms-overflow-style: none;   */
+
+    /* Firefox */
+  /* scrollbar-width: none;   */
+ 
+  /* position: relative; */
+}
+
+
+.body{
+    background-color:rgb(240, 240, 240);
+}
+
+/* .display-1::-webkit-scrollbar{
+    display: none;
+  } */ */
+
+  /* .display-2::-webkit-scrollbar{
+   
+    display: none;
+  } */
+
+/* p::-webkit-scrollbar{
+    display: none;
+  }
+
+
+.navbar {
+    background-color: white;
+
+}
+
+
+/* .bluethis{
+   filter: blur(3px);
+   -webkit-filter: blur(2px);
+
+} */
+
+
+.nav-link {
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.nav-link:hover {
+    color: rgb(241, 234, 234) !important;
+    background-color: black;
+}
+
+
+/* aboutsection */
+
+.aboutsection{
+    background: url("img1.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.contactus {
+    background: url("https://images.unsplash.com/photo-1587560699334-cc4ff634909a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+
+
+
+.footer{
+    
+    /* background-color: black; */
+    color: black;
+}
+
+
+
+.servicesectioin{
+    background-color:rgb(18, 17, 17);
+}
+
+
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+@media only screen and (min-width: 600px) {
+    .aaaaaaaa{
+        width: 100% !important;
+        height: 100vh !important;
+        object-fit: cover;
+        filter: blur(3px);
+        -webkit-filter: blur(2px);
+    }
+  
+}
+
+
+.inner{
+    overflow: hidden !important;
+}
+
+
+.inner img{
+    transition: all 1.5s ease !important;
+}
+
+
+.inner:hover img{  
+    transform: scale(1.5s) !important;
+
+}
+
+
+/* text animation */
+
+.animation h5 {
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text 5s steps(25) infinite alternate ;
+    border-right:3px solid rgb(232, 31, 31);
+}
+@keyframes text{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 25ch; 
+    }
+}
+
+
+.fixed-size-img {
+    height: 200px !important;  /* Adjust the height as needed */
+    max-width: 100% !important; /* Ensures the image won't exceed the card width */
+    object-fit: cover !important; /* Resizes the image maintaining aspect ratio and covering the entire space */
+}
+
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Initial transparent background */
+    opacity: 0; /* Initial transparency */
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary {
+    display: none;
+    color: white; /* Text color for the button */
+}
+
+.fixed-size-img {
+    height: 200px; /* Adjust the height as needed */
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.card:hover .overlay .btn-primary {
+    display: block;
+}
+
+
+
+ .tab-content {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Individual tab styling */
+    .tab-pane {
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        margin-top: 20px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .tab-pane:hover {
+        transform: scale(1.02);
+    }
+
+    /* Header styling */
+    h4 {
+        color: #343a40;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+        transform: scale(1.02);
+    }
+
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .card-title {
+        color: #333;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .card-text {
+        color: #555;
+        font-size: 16px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        margin-top: 10px;
+    }
