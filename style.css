@@ -131,7 +131,7 @@
     width: 0ch;
     overflow: hidden;
     white-space: nowrap;
-    animation: text 5s steps(25) infinite alternate ;
+    animation: text 5s steps(14) infinite alternate ;
     border-right:3px solid rgb(232, 31, 31);
 }
 @keyframes text{
@@ -139,7 +139,7 @@
         width: 0ch;
     }
     50%{
-        width: 25ch; 
+        width: 14ch; 
     }
 }
 
